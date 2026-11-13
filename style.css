@@ -1,0 +1,203 @@
+/*  Geral  */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box; /* padding e borda não aumentam o tamanho da caixa (melhor assim) */
+}
+
+body {
+  font-family: "Space Grotesk", sans-serif;
+  color: #191A23;
+  background: #ffffff;
+}
+
+a {
+  color: inherit;          /* link com a mesma cor do texto */
+  text-decoration: none;   /* tira o sublinhado */
+}
+
+img {
+  max-width: 100%;         /* imagem nunca passa do tamanho da tela (ajuste de prop) */
+}
+
+/* Caixa que centraliza o conteúdo da página (evitar mexer para nao desarrumar) */
+.container {
+  max-width: 1240px;
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+/*  Cabeçalho  */
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 40px 0;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.logo img {
+  height: 36px;
+}
+
+.menu {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+}
+
+.menu ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+}
+
+/* Botao "Request a quote" */
+.botao {
+  display: inline-block;
+  padding: 18px 34px;
+  border: 1px solid #191A23;
+  border-radius: 14px;
+  font-size: 18px;
+}
+
+/* Botao "Book a consultation" */
+.botao-escuro {
+  background: #191A23;
+  color: #ffffff;
+}
+
+/*  Hero  */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 80px;
+}
+
+.hero-texto {
+  width: 45%;
+}
+
+.hero-texto h1 {
+  font-size: 60px;
+  font-weight: 500;
+  line-height: 1.15;
+}
+
+.hero-texto p {
+  font-size: 20px;
+  line-height: 1.4;
+  margin: 24px 0 40px;
+}
+
+.hero-imagem {
+  width: 50%;
+}
+
+/*  Serviços  */
+.servicos-topo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 70px;
+}
+
+.servicos-topo h2 {
+  padding: 0 8px;
+  background: #B9FF66;
+  border-radius: 7px;
+  font-size: 40px;
+  font-weight: 500;
+}
+
+.servicos-topo p {
+  max-width: 580px;
+}
+
+/* Caixa que organiza os 6 cards (2 por linha para ficar estetico) */
+.cards {
+  display: flex;
+  flex-wrap: wrap;               /* quebra para a linha de baixo(otimiza espaco) */
+  justify-content: space-between;
+  padding-bottom: 60px;
+}
+
+/*  Card  */
+.card {
+  position: relative;            /* para a imagem poder ficar solta dentro do card */
+  display: flex;
+  flex-direction: column;        /* titulo em cima, "Learn more" abaixo dele*/
+  justify-content: space-between;
+  width: 48%;
+  height: 310px;
+  margin-bottom: 40px;
+  padding: 50px;
+  border: 1px solid #191A23;
+  border-bottom: 6px solid #191A23;        /* define a borda so do lado de baixo */
+  border-radius: 45px;                      /* arredonda os cantos da caixa */
+}         
+
+.card h3 {
+  font-size: 30px;
+  font-weight: 500;
+  line-height: 1.4;
+}
+
+/* Fundo colorido atrás de cada linha do título */
+.rotulo {
+  padding: 0 7px;
+  border-radius: 7px;
+  color: #191A23;
+}
+
+.rotulo-verde {
+  background: #B9FF66;
+}
+
+.rotulo-branco {
+  background: #ffffff;
+}
+
+/* Ilustração do card, no lado direito */
+.card-imagem {
+  position: absolute;
+  right: 50px;
+  top: 80px;
+  width: 200px;
+}
+
+.card-link {       /* learn more (cards) */
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 20px;
+}
+
+.card-link img {    /* learn more (cards) */
+  width: 41px;
+  height: 41px;
+}
+
+/* Cores para cada tipo de card */
+.cinza {
+  background: #F3F3F3;
+}
+
+.verde {
+  background: #B9FF66;
+}
+
+.escuro {
+  background: #191A23;
+  color: #ffffff;
+}
+
+/* Pesquisei algumas funcoes em que coloquei comentarios do lado para eu relembrar! */
